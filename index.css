@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    background-image: url(/images/cumquats.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
+}
+
+.bouncy {
+    padding: 24px;
+}
+.bouncy p {
+    padding: 8px;
+    margin: 0;
+    color: #0040ff;
+    text-shadow: 2px 2px 0 #ffcb00;
+    animation: hop 1s infinite;
+}
+
+.bouncy p:nth-of-type(1) {
+    animation-delay: -0s;
+}
+
+.bouncy p:nth-of-type(2) {
+    animation-delay: -0.3s;
+}
+
+.bouncy p:nth-of-type(3) {
+    animation-delay: -0.9s;
+}
+
+.bouncy p:nth-of-type(4) {
+    animation-delay: -1.5s;
+}
+
+.bouncy span {
+    background-color: #ffffffb3;
+    padding: 0 4px;
+    font-size: 24px;
+    display: inline-block;
+}
+
+@media (max-width: 798px) {
+    p {
+        display: inline-block;
+    }
+}
+
+@keyframes hop {
+    0%,
+    50% {
+        transform: translateY(0);
+    }
+    51%,
+    100% {
+        transform: translateY(1px);
+    }
+}
+
+.post {
+    max-width: 798px;
+    background-color: #ffffffcc;
+    padding: 24px 32px;
+    color: #333;
+    margin: 32px auto;
+}
+
+.post h1 {
+    font-size: 2.4rem;
+    margin: 12px 0;
+}
+
+.post h2 {
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.post p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 798px) {
+    .post {
+        margin: 0 auto;
+    }
+    .post p {
+        font-size: 1.1rem;
+    }
+}
